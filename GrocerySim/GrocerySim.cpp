@@ -17,13 +17,59 @@ int main(int argc, char* argv[])
 
 	//
 	for (int i = 0; i < minutes; i++) {
-		SimulateMinute();
+		std::cout << SimulateMinute(i, expressLane, normalLane);
 	}
 }
 
-void SimulateMinute() {
-
+std::string SimulateMinute(int minute, Queue* express, Queue* normal) {
+	if (minute == 0) {// first minute program runs
+		express->customerProcessTime = std::rand() % 5 + 1; // set values for how long each customer takes
+		normal->customerProcessTime = std::rand() % 6 + 3;
+		Customer* cn = new Customer(minute); // create customers for each line
+		Customer* ce = new Customer(minute);
+	}
+	else {
+		
+	}
+	express->customerProcessTime--;
+	express->customerProcessTime--;
 }
+void newCustomerExpress(int minute, Queue* line){
+	Customer* c = new Customer(minute);
+	c->finishTime = std::rand() % 5 + 1 + c->arrivalTime; // sets finish time to random value 1-5 plus when they arrived
+	line->Enqueue(c);
+}
+void newCustomerNormal(int minute, Queue* line) {
+	Customer* c = new Customer(minute);
+	c->finishTime = std::rand() % 6 + 3 + c->arrivalTime; // sets finish time to random value 3-8 plus when they arrived
+	line->Enqueue(c);
+}
+
+class GroceryLine : Queue {
+
+public:
+	int customerProcessTime;
+	int nextCustomerInterval;
+	std::string LineName;
+	bool empty;
+	void MinutePasses() {
+		this->customerProcessTime--;
+		this->nextCustomerInterval--;
+	}
+};
+
+class ExpressLine : GroceryLine {
+
+	ExpressLine() {
+		this->nextCustomerInterval = std::rand() % 5 + 1;
+	}
+};
+
+class NormalLine : GroceryLine {
+	NormalLine() {
+		this->nextCustomerInterval = std::rand() % 6 + 3;
+	}
+};
 
 class Queue
 {
@@ -32,11 +78,9 @@ private:
 	QueueNode* Head;
 
 public:
-	std::string QueueName;
 	int QueueSize = 0;
 
-	Queue(std::string QueueName){
-		this->QueueName = QueueName;
+	Queue(){
 		Tail = NULL;
 		Head = NULL;
 		QueueSize = 0;
