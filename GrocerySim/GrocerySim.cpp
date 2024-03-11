@@ -4,24 +4,54 @@
 #include <vector>
 #include <string>
 
+
+
 int main(int argc, char* argv[])
 {
-	static int minutes = 360;// temp untill I get 
-	Queue* expressLane = new Queue("Express");
-	Queue* normalLane = new Queue("Normal");
+	static int minutes = 360;// temp untill I get
+	GroceryLine* ExpressLane = new ExpressLine("Express Line");
+	GroceryLine* NormalLane = new NormalLine("Normal Lane");
+
 	std::cout << "Hello World!\n" << argc;
     if (argc == 0)
     {
         std::cout << "This program simulats a grocery store line and takes argument for the number of minutes being simulated";
     }
 
-	//
+	ExpressLane->nextCustomerNumber = 1;
+	std::string print;
 	for (int i = 0; i < minutes; i++) {
-		std::cout << SimulateMinute(i, expressLane, normalLane);
+		if (i % (24 * 60 * 60) == 0) { // checks if 24 hours have passed
+			ExpressLane->nextCustomerNumber = 1; // resets customer number to 1
+		}
+		Customer* customer = NULL;
+		customer = ExpressLane->MinutePasses(i);
+		if (customer != NULL) { // if a customer left got checked out
+			print += printCustomerInfo(customer);
+		}
+		customer = NULL;
+		customer = ExpressLane->MinutePasses(i);
+		if (customer != NULL) {
+			print += printCustomerInfo(customer);
+		}
+		std::cout << print;
+
 	}
 }
 
-std::string SimulateMinute(int minute, Queue* express, Queue* normal) {
+std::string printCustomerInfo(Customer* customer) {
+	std::string print;
+	print += "Customer " + customer->customerNumber;
+	print += " Arrived at Minute " + customer->arrivalTime;
+	print += " and Left at " + customer->finishTime;
+	print += " and Spent " + customer->timeElapsed;
+	print += " Minutes in line";
+	print += " and Checked Out With, ";
+	print += groceryList(customer) + " " +'\n';
+	return print;
+}
+
+/*std::string SimulateMinute(int minute, Queue* express, Queue* normal) {
 	if (minute == 0) {// first minute program runs
 		express->customerProcessTime = std::rand() % 5 + 1; // set values for how long each customer takes
 		normal->customerProcessTime = std::rand() % 6 + 3;
@@ -33,41 +63,82 @@ std::string SimulateMinute(int minute, Queue* express, Queue* normal) {
 	}
 	express->customerProcessTime--;
 	express->customerProcessTime--;
-}
-void newCustomerExpress(int minute, Queue* line){
-	Customer* c = new Customer(minute);
-	c->finishTime = std::rand() % 5 + 1 + c->arrivalTime; // sets finish time to random value 1-5 plus when they arrived
-	line->Enqueue(c);
-}
-void newCustomerNormal(int minute, Queue* line) {
-	Customer* c = new Customer(minute);
-	c->finishTime = std::rand() % 6 + 3 + c->arrivalTime; // sets finish time to random value 3-8 plus when they arrived
-	line->Enqueue(c);
+}*/
+
+std::string groceryList(Customer* cur){
+	std::string list = "";
+	for (int i = 0; i < cur->groceries.size(); i++){
+		list += cur->groceries[i];
+		list += " ";
+	}
+	return list;
 }
 
 class GroceryLine : Queue {
 
 public:
+	static int nextCustomerNumber;
 	int customerProcessTime;
 	int nextCustomerInterval;
 	std::string LineName;
 	bool empty;
-	void MinutePasses() {
+
+	Customer* MinutePasses(int minute) { // this is called on each Queue for each minute that passes
 		this->customerProcessTime--;
 		this->nextCustomerInterval--;
+		if (nextCustomerInterval == 0) {
+			if (QueueSize == 0) {// if there was no one in line process time needs to be set
+				customerProcessTime = IntervalAndProcessTime();
+			}
+			this->Enqueue(new Customer(minute, nextCustomerNumber));
+			nextCustomerNumber++;
+			nextCustomerInterval = IntervalAndProcessTime();
+		}
+		if (customerProcessTime == 0) { // if the current customer is done being checked-out
+			Customer* cust = Dequeue();
+			if (this->QueueSize != 0) {// if there is someone else in line reset process time
+				this->customerProcessTime = this->IntervalAndProcessTime();
+			}
+			cust->finishTime = minute;
+			cust->timeElapsed = cust->finishTime - cust->arrivalTime;
+			return cust;
+		}
+	}
+
+	int IntervalAndProcessTime() { 
+		return 0; 
+	};
+
+	std::string serialize(int minute) {
+		std::string serialize = this->LineName + "\n";
+		if (this->QueueSize == 0) {
+			serialize += "No customers in this line.\n";
+		}
+		else {
+			// to-do impliment recursive queue serialization
+		}
 	}
 };
 
-class ExpressLine : GroceryLine {
-
-	ExpressLine() {
-		this->nextCustomerInterval = std::rand() % 5 + 1;
+class ExpressLine : public GroceryLine {
+public:
+	ExpressLine(std::string name) {
+		this->LineName = name;
+		this->nextCustomerInterval = this->IntervalAndProcessTime();
+	}
+	int IntervalAndProcessTime() {
+		return std::rand() % 5 + 1;
 	}
 };
 
-class NormalLine : GroceryLine {
-	NormalLine() {
-		this->nextCustomerInterval = std::rand() % 6 + 3;
+class NormalLine : public GroceryLine {
+public:
+	NormalLine(std::string name) {
+		this->LineName = name;
+		this->nextCustomerInterval = this->IntervalAndProcessTime();
+	}
+	int IntervalAndProcessTime() {
+		return std::rand() % 6 + 3;
 	}
 };
 
@@ -105,11 +176,11 @@ public:
 		if (Head == NULL)
 			return NULL;
 		else {
-			QueueNode* Node;
-			Node = Head;
-			Head = Node->behind;
-			Head->front = NULL;
-			return Node->data;
+			QueueNode* Node;// node being dequeued
+			Node = Head; // sets it to head of line
+			Head = Node->behind; // sets new head to node behind
+			Head->front = NULL; // sets new head front node to null
+			return Node->data; // returns customer of dequeued head
 		}
 	}
 };
@@ -137,11 +208,12 @@ public:
 	int timeElapsed;
 	int arrivalTime;
 	int finishTime;
+	int customerNumber;
 
-	Customer(int time = 0) {
+	Customer(int time = 0, int num) {
 		arrivalTime = time;
-		timeElapsed = 0;
-		int numItems = std::rand() % 8;
+		customerNumber = num;
+		int numItems = std::rand() % 8 + 1;
 		for (int i = 0; i < numItems; i++) {
 			groceries.push_back(Groceries[std::rand() % size]);
 		}
