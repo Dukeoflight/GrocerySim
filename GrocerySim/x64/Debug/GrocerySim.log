@@ -1,0 +1,5 @@
+﻿  GrocerySim.cpp
+C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(23,11): error C3646: 'customer': unknown override specifier
+C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(23,19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(26,3): error C2065: 'customer': undeclared identifier
+C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(26,14): error C3861: 'Customer': identifier not found
