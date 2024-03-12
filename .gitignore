@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# visual c++ cache files
+*.opendb
