@@ -3,137 +3,166 @@ C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(8,
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(8,40): error C2059: syntax error: ')'
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(9,25): error C2065: 'Customer': undeclared identifier
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(9,34): error C2059: syntax error: ')'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(16,2): error C2065: 'GroceryLine': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(16,15): error C2065: 'ExpressLane': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(16,33): error C2061: syntax error: identifier 'ExpressLine'
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(17,2): error C2065: 'GroceryLine': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(17,15): error C2065: 'ExpressLane': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(17,33): error C2061: syntax error: identifier 'ExpressLine'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(18,2): error C2065: 'GroceryLine': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(18,15): error C2065: 'NormalLane': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(18,32): error C2061: syntax error: identifier 'GroceryLine'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(20,2): error C2065: 'ExpressLane': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(24,4): error C2065: 'nextCustomerNumber': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(27,3): error C2065: 'Customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(27,13): error C2065: 'customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(28,3): error C2065: 'customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(28,14): error C2065: 'ExpressLane': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(29,7): error C2065: 'customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(30,31): error C2065: 'customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(17,15): error C2065: 'NormalLane': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(17,32): error C2061: syntax error: identifier 'GroceryLine'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(26,3): error C2065: 'Customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(26,13): error C2065: 'customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(27,3): error C2065: 'customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(27,14): error C2065: 'ExpressLane': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(28,7): error C2065: 'customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(29,31): error C2065: 'customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(31,3): error C2065: 'customer': undeclared identifier
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(32,3): error C2065: 'customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(33,3): error C2065: 'customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(33,14): error C2065: 'ExpressLane': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(34,7): error C2065: 'customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(35,31): error C2065: 'customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(38,13): error C2065: 'ExpressLane': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(39,13): error C2065: 'NormalLane': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,13): error C2374: 'printCustomerInfo': redefinition; multiple initialization
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(32,14): error C2065: 'ExpressLane': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(33,7): error C2065: 'customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(34,31): error C2065: 'customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(37,13): error C2065: 'ExpressLane': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(38,13): error C2065: 'NormalLane': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(45,13): error C2374: 'printCustomerInfo': redefinition; multiple initialization
   C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(8,13):
   see declaration of 'printCustomerInfo'
   
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,31): error C2065: 'Customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,41): error C2065: 'customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,51): error C2143: syntax error: missing ';' before '{'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(45,31): error C2065: 'Customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(45,41): error C2065: 'customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(45,51): error C2143: syntax error: missing ';' before '{'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,8): error C2143: syntax error: missing ';' before '+='
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,2): error C2371: 'print': redefinition; different basic types
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,14):
+  see declaration of 'print'
+  
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,8): error C2059: syntax error: '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(48,8): error C2143: syntax error: missing ';' before '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(48,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(48,2): error C2371: 'print': redefinition; different basic types
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,14):
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,14):
   see declaration of 'print'
   
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(48,8): error C2059: syntax error: '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(49,8): error C2143: syntax error: missing ';' before '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(49,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(49,2): error C2371: 'print': redefinition; different basic types
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,14):
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,14):
   see declaration of 'print'
   
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(49,8): error C2059: syntax error: '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(50,8): error C2143: syntax error: missing ';' before '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(50,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(50,2): error C2371: 'print': redefinition; different basic types
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,14):
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,14):
   see declaration of 'print'
   
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(50,8): error C2059: syntax error: '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(51,8): error C2143: syntax error: missing ';' before '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(51,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(51,2): error C2371: 'print': redefinition; different basic types
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,14):
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,14):
   see declaration of 'print'
   
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(51,8): error C2059: syntax error: '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(52,8): error C2143: syntax error: missing ';' before '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(52,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(52,2): error C2371: 'print': redefinition; different basic types
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,14):
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,14):
   see declaration of 'print'
   
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(52,8): error C2059: syntax error: '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(53,8): error C2143: syntax error: missing ';' before '+='
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(53,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(53,2): error C2371: 'print': redefinition; different basic types
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,14):
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(46,14):
   see declaration of 'print'
   
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(53,8): error C2059: syntax error: '+='
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(54,8): error C2143: syntax error: missing ';' before '+='
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(54,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(54,2): error C2371: 'print': redefinition; different basic types
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(47,14):
-  see declaration of 'print'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(54,2): error C2059: syntax error: 'return'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(55,1): error C2059: syntax error: '}'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(55,1): error C2143: syntax error: missing ';' before '}'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(57,39): error C2143: syntax error: missing ';' before '{'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(57,39): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(66,21): error C2504: 'Queue': base class undefined
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(73,10): error C2143: syntax error: missing ';' before '*'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(73,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(73,29): error C2238: unexpected token(s) preceding ';'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(78,2): error C2535: 'GroceryLine::GroceryLine(std::string)': member function already defined or declared
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(76,2):
+  see declaration of 'GroceryLine::GroceryLine'
   
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(54,8): error C2059: syntax error: '+='
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(55,2): error C2059: syntax error: 'return'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(56,1): error C2059: syntax error: '}'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(56,1): error C2143: syntax error: missing ';' before '}'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(58,39): error C2143: syntax error: missing ';' before '{'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(58,39): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(67,21): error C2504: 'Queue': base class undefined
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(74,10): error C2143: syntax error: missing ';' before '*'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(74,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(74,29): error C2238: unexpected token(s) preceding ';'
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(82,10): error C2143: syntax error: missing ';' before '*'
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(82,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(82,37): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(104,6): error C2535: 'int GroceryLine::IntervalAndProcessTime(void)': member function already defined or declared
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(75,6):
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(74,6):
   see declaration of 'GroceryLine::IntervalAndProcessTime'
   
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(108,14): error C2535: 'std::string GroceryLine::serialize(int)': member function already defined or declared
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(76,14):
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(75,14):
   see declaration of 'GroceryLine::serialize'
   
 C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(110,13): error C2039: 'QueueSize': is not a member of 'GroceryLine'
-  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(67,7):
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(66,7):
   see declaration of 'GroceryLine'
   
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(129,11): error C2143: syntax error: missing ';' before '*'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(129,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(129,17): error C2238: unexpected token(s) preceding ';'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(130,11): error C2143: syntax error: missing ';' before '*'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(130,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(130,17): error C2238: unexpected token(s) preceding ';'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(141,15): error C2061: syntax error: identifier 'Customer'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(155,10): error C2143: syntax error: missing ';' before '*'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(155,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(155,21): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(136,3): error C2065: 'Tail': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(137,3): error C2065: 'Head': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(144,7): error C2065: 'Head': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(145,4): error C2065: 'QueueNode': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(145,15): error C2065: 'Node': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(145,26): error C2061: syntax error: identifier 'QueueNode'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(146,4): error C2065: 'Head': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(146,11): error C2065: 'Node': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(147,4): error C2065: 'Tail': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(147,11): error C2065: 'Node': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(150,4): error C2065: 'QueueNode': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(150,15): error C2065: 'Node': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(150,26): error C2061: syntax error: identifier 'QueueNode'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(151,4): error C2065: 'Tail': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(151,19): error C2065: 'Node': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(171,10): error C2143: syntax error: missing ';' before '*'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(171,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(171,16): error C2238: unexpected token(s) preceding ';'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(174,12): error C2061: syntax error: identifier 'Customer'
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(175,3): error C2065: 'data': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(175,10): error C2065: 'customer': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(176,11): error C2065: 'forward': undeclared identifier
-C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(194,10): error C2548: 'Customer::Customer': missing default argument for parameter 2
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(124,2): error C2535: 'ExpressLine::ExpressLine(std::string)': member function already defined or declared
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(122,2):
+  see declaration of 'ExpressLine::ExpressLine'
+  
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(127,6): error C2535: 'int ExpressLine::IntervalAndProcessTime(void)': member function already defined or declared
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(121,6):
+  see declaration of 'ExpressLine::IntervalAndProcessTime'
+  
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(124,13): error C2512: 'GroceryLine': no appropriate default constructor available
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(66,7):
+  see declaration of 'GroceryLine'
+  
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(135,11): error C2143: syntax error: missing ';' before '*'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(135,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(135,17): error C2238: unexpected token(s) preceding ';'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(136,11): error C2143: syntax error: missing ';' before '*'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(136,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(136,17): error C2238: unexpected token(s) preceding ';'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(140,15): error C2061: syntax error: identifier 'Customer'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(141,10): error C2143: syntax error: missing ';' before '*'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(141,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(141,21): error C2238: unexpected token(s) preceding ';'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(144,2): error C2535: 'Queue::Queue(void)': member function already defined or declared
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(142,2):
+  see declaration of 'Queue::Queue'
+  
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(150,15): error C2061: syntax error: identifier 'Customer'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(150,7): error C2535: 'void Queue::Enqueue(void)': member function already defined or declared
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(140,7):
+  see declaration of 'Queue::Enqueue'
+  
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(164,10): error C2143: syntax error: missing ';' before '*'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(164,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(164,21): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(145,3): error C2065: 'Tail': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(146,3): error C2065: 'Head': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(153,7): error C2065: 'Head': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(154,4): error C2065: 'QueueNode': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(154,15): error C2065: 'Node': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(154,26): error C2061: syntax error: identifier 'QueueNode'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(155,4): error C2065: 'Head': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(155,11): error C2065: 'Node': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(156,4): error C2065: 'Tail': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(156,11): error C2065: 'Node': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(159,4): error C2065: 'QueueNode': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(159,15): error C2065: 'Node': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(159,26): error C2061: syntax error: identifier 'QueueNode'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(160,4): error C2065: 'Tail': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(160,19): error C2065: 'Node': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(180,10): error C2143: syntax error: missing ';' before '*'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(180,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(180,16): error C2238: unexpected token(s) preceding ';'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(184,12): error C2061: syntax error: identifier 'Customer'
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(185,3): error C2065: 'data': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(185,10): error C2065: 'customer': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(186,11): error C2065: 'forward': undeclared identifier
+C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(206,2): error C2535: 'Customer::Customer(int,int)': member function already defined or declared
+  C:\Users\lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(204,2):
+  see declaration of 'Customer::Customer'
+  

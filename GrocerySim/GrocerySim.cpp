@@ -8,8 +8,7 @@
 std::string printCustomerInfo(Customer*);
 std::string groceryList(Customer*);
 
-
-int nextCustomerInterval;
+static int nextCustomerNumber;
 
 int main(int argc, char* argv[])
 {
@@ -17,7 +16,7 @@ int main(int argc, char* argv[])
 	GroceryLine* ExpressLane = new ExpressLine("Express Line");
 	GroceryLine* NormalLane = new GroceryLine("Normal line");
 
-	ExpressLane->nextCustomerNumber = 1;
+	nextCustomerNumber = 1;
 	std::string print;
 	for (int i = 0; i < minutes; i++) {
 		if (i % (24 * 60 * 60) == 0) { // checks if 24 hours have passed
@@ -34,7 +33,7 @@ int main(int argc, char* argv[])
 		if (customer != NULL) {// if a customer got checked out form the express line
 			print += printCustomerInfo(customer);
 		}
-		if (minutes % 10 == 0) {
+		if (minutes % 10 == 0) {// serialize both queues every 10 minutes
 			print += ExpressLane->serialize(minutes);
 			print += NormalLane->serialize(minutes);
 		}
@@ -66,16 +65,17 @@ std::string groceryList(Customer* cur){
 
 class GroceryLine : Queue {
 public:
-	static int nextCustomerNumber;
 	int customerProcessTime;
+	int nextCustomerInterval;
 	std::string LineName;
 	bool empty;
 
 	Customer* MinutePasses(int);
 	int IntervalAndProcessTime();
 	std::string serialize(int);
+	GroceryLine(std::string);
 
-	GroceryLine(std::string name) {
+	GroceryLine(std::string name = "Normal Line") {
 		LineName = name;
 	}
 
@@ -118,6 +118,12 @@ public:
 
 class ExpressLine : public GroceryLine {
 public:
+	int IntervalAndProcessTime();
+	ExpressLine(std::string);
+
+	ExpressLine(std::string name = "Express Line") {
+		LineName = name;
+	}
 	int IntervalAndProcessTime() {
 		return std::rand() % 5 + 1;
 	}
@@ -131,6 +137,9 @@ private:
 
 public:
 	int QueueSize = 0;
+	void Enqueue(Customer*);
+	Customer* Dequeue();
+	Queue();
 
 	Queue(){
 		Tail = NULL;
@@ -171,6 +180,7 @@ public:
 	Customer* data;
 	QueueNode* front;
 	QueueNode* behind;
+
 	QueueNode(Customer* customer, QueueNode* forward = NULL){
 		data = customer; // assigns QueueNode customer pointer to Customer Pointer passed in
 		front = forward;// assigns inFront pointer to passed object pointer
@@ -191,7 +201,9 @@ public:
 	int finishTime;
 	int customerNumber;
 
-	Customer(int time = 0, int num) {
+	Customer(int, int);
+
+	Customer(int time = 0, int num = 1) {
 		arrivalTime = time;
 		customerNumber = num;
 		int numItems = std::rand() % 8 + 1;
