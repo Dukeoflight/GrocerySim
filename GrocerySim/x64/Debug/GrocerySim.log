@@ -1,6 +1,6 @@
 ﻿  GrocerySim.cpp
-C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(179,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(269,6): warning C4101: 'minutes': unreferenced local variable
-C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(267,6): warning C4101: 'days': unreferenced local variable
-C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(268,6): warning C4101: 'hours': unreferenced local variable
+C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(187,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(258,6): warning C4101: 'minutes': unreferenced local variable
+C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(256,6): warning C4101: 'days': unreferenced local variable
+C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\GrocerySim\GrocerySim.cpp(257,6): warning C4101: 'hours': unreferenced local variable
   GrocerySim.vcxproj -> C:\Users\Lucas\OneDrive\C++ Applications\GrocerySim\x64\Debug\GrocerySim.exe

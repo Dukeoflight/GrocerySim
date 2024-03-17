@@ -31,3 +31,6 @@
 *.out
 *.app
 *.opendb
+
+#stackoverflow told me to ignore this
+*.vs

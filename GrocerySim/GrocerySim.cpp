@@ -116,18 +116,18 @@ public:
 	int customerProcessTime;
 	std::string LineName;
 
-	GroceryLine(std::string name = "Normal Line", bool express = true) {
+	GroceryLine(std::string name = "Normal Line") {
 		LineName = name;
 		customerProcessTime = 0;
 		nextCustomerInterval = 0;
 	}
 
-	Customer* MinutePasses(int minute, bool express){ // this is called on each Queue for each minute that passes
+	Customer* MinutePasses(int minute){ // this is called on each Queue for each minute that passes
 		nextCustomerInterval--;
 		customerProcessTime--;
 
 		if (nextCustomerInterval <= 0) {// time to enqueue
-			nextCustomerInterval = IntervalAndProcessTime(express);
+			nextCustomerInterval = IntervalAndProcessTime();
 			Customer* cust = new Customer(minute, nextCustomerNumber);
 			cust->line = LineName;
 			Enqueue(cust);
@@ -135,7 +135,7 @@ public:
 		}
 
 		if (customerProcessTime <= 0) { // if the current customer is done being checked-out
-			customerProcessTime = IntervalAndProcessTime(express)/*-1*/; // time spent in line is slightly less than arrival time
+			customerProcessTime = IntervalAndProcessTime()/*-1*/; // time spent in line is slightly less than arrival time
 			Customer* cust = Dequeue();
 			if (cust != NULL) {
 				cust->finishTime = minute;
@@ -150,25 +150,17 @@ public:
 		std::string serialize = this->LineName + " serialized at " + std::to_string(minute) + " " + "With " + std::to_string(QueueSize) + " in line.";
 		return serialize;
 	}
-	static int IntervalAndProcessTime(bool express) {
-		if (express) {
-			return std::rand() % 5 + 1;
-		}
-		else {
-			return std::rand() % 6 + 3;
-		}
-	}
-	int newIntervalAndProcessTime() {
+	static int IntervalAndProcessTime() {
 		return std::rand() % 6 + 3;
 	}
 };
 
 class ExpressLine : public GroceryLine {
 public:
-	ExpressLine(std::string name, bool express) {
+	ExpressLine(std::string name = "Express Line") {
 		LineName = name;
 	}
-	int newIntervalAndProcessTime() {
+	int IntervalAndProcessTime() {
 		return std::rand() % 5 + 1;
 	}
 };
@@ -178,18 +170,19 @@ std::string getCustInfo(Customer*);
 void printCustInfo(Customer*);
 std::string groceryList(Customer*);
 //void testQueue();
-std::string doLane(int, bool, GroceryLine*);
+std::string doLane(int, GroceryLine&);
 int GroceryLine::nextCustomerNumber = 1;
 std::string minForm(int);
 
 int main(int argc, char* argv[])
 {
-	ExpressLine line("Express Line", true);
+	static int minutes = 1000;// temp untill I get user input setup
+
+	ExpressLine line("Express Line");
 	GroceryLine ExpressLane = line;
 
-	static int minutes = 1000;// temp untill I get user input setup
-	GroceryLine* ExpressLane = new GroceryLine("Express Line", true);
-	GroceryLine* NormalLane = new GroceryLine("Normal line", false);
+	GroceryLine NormalLane("Normal Lane");
+
 
 	srand(time(NULL));
 	//testCustomerConstruction();
@@ -205,12 +198,12 @@ int main(int argc, char* argv[])
 		if (i % (24 * 60 * 60) == 0) { // checks if 24 hours have passed
 			GroceryLine::nextCustomerNumber = 1; // resets customer number to 1
 		}
-		doLane(i, true, ExpressLane); // process express lane
-		doLane(i, false, NormalLane); // process normal lane
+		doLane(i, ExpressLane); // process express lane
+		doLane(i, NormalLane); // process normal lane
 		if (i % 60 == 0) { // Every 60 minutes serialize queues
-			print += ExpressLane->serialize(i);
+			print += ExpressLane.serialize(i);
 			print += "\n";
-			print += NormalLane->serialize(i);
+			print += NormalLane.serialize(i);
 			print += "\n";
 			std::cout << print;
 			print = "";
@@ -218,10 +211,10 @@ int main(int argc, char* argv[])
 	}
 }
 
-std::string doLane(int min, bool express, GroceryLine* line) {
+std::string doLane(int min, GroceryLine& line) {
 	Customer* cust;
 	std::string output = "";
-	cust = line->MinutePasses(min, express);
+	cust = line.MinutePasses(min);
 	if (cust != NULL) {
 		printCustInfo(cust);
 		delete cust;
