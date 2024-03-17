@@ -116,7 +116,7 @@ public:
 	int customerProcessTime;
 	std::string LineName;
 
-	GroceryLine(std::string name, bool express) {
+	GroceryLine(std::string name = "Normal Line", bool express = true) {
 		LineName = name;
 		customerProcessTime = 0;
 		nextCustomerInterval = 0;
@@ -158,8 +158,20 @@ public:
 			return std::rand() % 6 + 3;
 		}
 	}
+	int newIntervalAndProcessTime() {
+		return std::rand() % 6 + 3;
+	}
 };
 
+class ExpressLine : public GroceryLine {
+public:
+	ExpressLine(std::string name, bool express) {
+		LineName = name;
+	}
+	int newIntervalAndProcessTime() {
+		return std::rand() % 5 + 1;
+	}
+};
 
 //void testCustomerConstruction();
 std::string getCustInfo(Customer*);
@@ -172,6 +184,9 @@ std::string minForm(int);
 
 int main(int argc, char* argv[])
 {
+	ExpressLine line("Express Line", true);
+	GroceryLine ExpressLane = line;
+
 	static int minutes = 1000;// temp untill I get user input setup
 	GroceryLine* ExpressLane = new GroceryLine("Express Line", true);
 	GroceryLine* NormalLane = new GroceryLine("Normal line", false);
